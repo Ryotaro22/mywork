@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 940px;
+    padding: 4%;
+    margin: 0 auto;
+
+}
+
+header {
+    padding: 60px 0;
+    display: flex;
+    /*両端にそろえる*/
+    justify-content: space-between;
+}
+
+.mywork h2 {
+    font-size: 30px;
+}
+
+.header-list {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+.list {
+    padding-right: 20px;
+}
+
+.main {
+    height: 420px;
+    width: 100%;
+}
+
+.main img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.about {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.about-text {
+    text-align: left;
+}
+
+.name {
+    padding-bottom: 40px;
+}
+
+.profile {
+    padding-top: 40px;
+}
+
+.img-list {
+    padding: 60px 0;
+}
+
+.img-box {
+    display: flex;
+}
+
+.image {
+    padding: 15px;
+}
+
+.image img{
+    width: 100%;
+}
+
+.News {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.news-text {
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.texts {
+    border-bottom: 1px solid #c8c8c8;
+    padding: 15px 5px;
+    width: 20%;
+}
+
+.text-bun {
+    padding: 15px 5px;
+    width: 70%;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+.input-box {
+    display: flex;
+}
+
+.input-box p {
+    padding-right: 20px;
+    width: 10%;
+}
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+input, textarea{
+    width: 100%;
+    border: 1px solid #c8c8c8;
+    /*選択したときの枠線の色の定義*/
+    outline: 0;
+}
+
+/*選択したときの枠線の色*/
+input, textarea:focus {
+    border: 1px solid #c8c8c8;
+}
+
+.submit-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.button {
+    background-color: #24292e;
+    color: #fff;
+    padding: 15px;
+    width: 20%;
+    border: solid 1px #24292e;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button input:hover {
+    background-color: #fff;
+    color: #24292e;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 8px;
+    padding: 10px;
+    margin-top: 60px;
+}
+@media screen and (max-width: 600px) {
+    /*縦並びにする*/
+   header {
+    padding: 10px 0;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .header-list {
+    padding: 10px;
+   }
+
+   .about-text {
+    font-size: 0.9rem;
+   }
+
+   .profile {
+    text-align: justify;
+   }
+
+   .img-box {
+    flex-flow: column;
+   }
+
+   .image {
+    max-width: 100%;
+   }
+
+   .news-text {
+    flex-flow: column;
+   }
+
+   .texts {
+    border: none;
+    padding-bottom: 0;
+   }
+
+   .text-bun {
+    width: 100%;
+    padding-top: 0;
+   }
+
+   .input-box {
+    flex-flow: column;
+   }
+
+   .input-box p {
+    max-width: 100%;
+   }
+
+   textarea {
+    padding: 10px;
+   }
+}
